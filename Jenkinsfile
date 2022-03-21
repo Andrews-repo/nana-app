@@ -8,13 +8,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build - t andrewsrepo/nana-app:latest'
+                sh 'docker build - t andrewsrepo/nana-app:latest .'
             }
         }
 
         stage('Login') {
             steps {
-                sh 'echo $DOCKERHUB_CREDENTIALS_PW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+                sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
             }
         }
 
