@@ -1,4 +1,3 @@
-node {
 pipeline {
     agent any
 
@@ -26,10 +25,9 @@ pipeline {
         }
     }
 
-    post {
+    /*post {
         always {
             sh 'docker logout'
-        }
+        }*/
     }
-}
 }
