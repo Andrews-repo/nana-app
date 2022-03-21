@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -t andrewsrepo/nana-app:latest .'
+                sh 'docker build -t andrewsrepo/nana-app:$BUILD_NUMBER .'
             }
         }
 
@@ -20,7 +20,12 @@ pipeline {
 
         stage('Push') {
             steps {
-                sh 'docker push andrewsrepo/nana-app:latest'
+                sh 'docker push andrewsrepo/nana-app:$BUILD_NUMBER'
+            }
+        }
+        stage('Cleanup') {
+            steps {
+                sh 'docker rmi andrewsrepo/nana-app:$BUILD_NUMBER'
             }
         }
     }

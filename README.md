@@ -1,3 +1,6 @@
+# https://medium.com/@marc_best/trigger-a-jenkins-build-from-a-github-push-b922468ef1ae
+# https://medium.com/codex/how-to-push-a-docker-image-to-docker-hub-using-jenkins-487fb1fcbe25
+
 ## demo app - developing with Docker
 
 This demo app shows a simple user profile app set up using 
