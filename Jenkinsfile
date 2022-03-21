@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build - t andrewsrepo/nana-app:latest .'
+                sh 'docker build -t andrewsrepo/nana-app:latest .'
             }
         }
 
