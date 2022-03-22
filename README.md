@@ -1,5 +1,19 @@
+This is code i found online and modified to work. The idea is to have a test app to push to git hub, and have Jenkins pull it, make it into a docker image, and push that image to dockerhub.
+
+The links below are the resources Ive used to complete the task. 
+
+1. get dockerhub token/add to jenkins
+2. launch instance w/ Jenkins
+3. create webhook in github repo, add ip of jenkins server
+4. on jenkins server, install gitub intergration plugin, restart jenkins
+5. config pipepline, point at github account, check "tigger for GITscm polling", point to docker hub cred.
+6. push code to github 
+
+
 # https://medium.com/@marc_best/trigger-a-jenkins-build-from-a-github-push-b922468ef1ae
 # https://medium.com/codex/how-to-push-a-docker-image-to-docker-hub-using-jenkins-487fb1fcbe25
+# https://medium.com/@gustavo.guss/jenkins-starting-with-pipeline-doing-a-node-js-test-72c6057b67d4
+# https://docs.cloudbees.com/docs/admin-resources/latest/plugins/dockerhub-trigger
 
 ## demo app - developing with Docker
 
