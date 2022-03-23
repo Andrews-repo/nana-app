@@ -5,6 +5,8 @@ pipeline {
         DOCKERHUB_CREDENTIALS=credentials('dockerhub-cred')
     }
 
+    tools {nodejs 'node'}
+
     stages {
         stage('New Build') {
             steps {
