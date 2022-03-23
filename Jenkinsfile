@@ -6,6 +6,17 @@ pipeline {
     }
 
     stages {
+        stage('New Build') {
+            steps {
+                sh 'npm install'
+            }
+        }
+
+        stage('test') {
+            steps {
+                sh 'npm test'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'docker build -t andrewsrepo/nana-app:$BUILD_NUMBER .'
@@ -32,7 +43,7 @@ pipeline {
 
     post {
         always {
-            sh 'docker logout '
+            sh 'docker logout'
         }
     }
 }

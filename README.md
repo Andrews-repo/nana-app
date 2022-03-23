@@ -5,7 +5,7 @@ The links below are the resources Ive used to complete the task.
 1. get dockerhub token/add to jenkins
 2. launch instance w/ Jenkins
 3. create webhook in github repo, add ip of jenkins server
-4. on jenkins server, install gitub intergration plugin, restart jenkins
+4. on jenkins server, install gitub intergration and node plugin, restart jenkins
 5. config pipepline, point at github account, check "tigger for GITscm polling", point to docker hub cred.
 6. push code to github 
 
