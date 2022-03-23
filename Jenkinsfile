@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('New Build') {
             steps {
-                sh 'npm install'
+                sh 'npm install mocha'
             }
         }
 
