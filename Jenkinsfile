@@ -16,7 +16,7 @@ pipeline {
 
         stage('test') {
             steps {
-                sh 'npm test --exit'
+                sh 'npm test'
             }
         }
         stage('Build') {
